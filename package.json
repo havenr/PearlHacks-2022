@@ -1,0 +1,32 @@
+{
+  "name": "pearlhacks-2022",
+  "version": "1.0.0",
+  "description": "hi",
+  "main": "index.js",
+  "scripts": {
+    "client": "npx browser-sync start -sw",
+    "server": "node server.js",
+    "start": "concurrently --kill-others \"npm run client\" \"npm run server\""
+  },
+  "proxy": "http://localhost:3000",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claremw/PearlHacks-2022.git"
+  },
+  "author": "Haven Ross, Maddison Wooten, and Tatiana Kelliher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claremw/PearlHacks-2022/issues"
+  },
+  "homepage": "https://github.com/claremw/PearlHacks-2022#readme",
+  "dependencies": {
+    "better-sqlite3": "^7.4.5",
+    "browser-sync": "^2.27.7",
+    "concurrently": "^6.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "md5": "^2.3.0",
+    "path": "^0.12.7"
+  }
+}
