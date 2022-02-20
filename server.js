@@ -16,7 +16,7 @@ app.use(express.json());
 // Start server
 app.listen(port, () => {
   console.log("Server running on port %PORT%".replace("%PORT%", port))
-  console.log("Visit 'http://localhost:3000/app' to start playing!");
+  console.log("Visit 'http://localhost:3000/' to start playing!");
 });
 
 // READ (HTTP method GET) at root endpoint /app/ 
